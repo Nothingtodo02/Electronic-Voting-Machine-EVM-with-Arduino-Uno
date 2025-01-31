@@ -1,69 +1,56 @@
-# Interactive LED Control using Python and Arduino
+# Electronic Voting Machine (EVM) 🚀
 
-## Project Overview
-This project enables **real-time interactive LED control** using **hand gestures** detected via a webcam. It integrates **Python (OpenCV, CVZone, Mediapipe)** with **Arduino** to translate finger movements into LED commands.
+## Overview
+This project is a **secure and interactive Electronic Voting Machine (EVM)** developed using **Arduino UNO**. It features push-button inputs, an LED display, and a keypad to ensure a smooth and user-friendly voting process. The system ensures the integrity of votes while being simple and easy to use.
 
-## Features
-- **Hand Gesture Detection:** Uses OpenCV and Mediapipe to recognize the number of fingers displayed.
-- **Arduino LED Control:** Sends signals to an Arduino to control LED states accordingly.
-- **Real-Time Interaction:** Provides immediate feedback based on detected gestures.
+## Features ✨
+- **Secure Voting Process** 🗳️
+- **Push-Button Inputs & Keypad Interface** ⌨️
+- **Real-Time LED Display for Voter Interaction** 💡
+- **Buzzer Feedback for Confirmation** 🔊
+- **Compact & Reliable Hardware Design** 🔧
 
-## Technologies Used
-- **Python** (for image processing and gesture detection)
-- **OpenCV** & **CVZone** (for image analysis)
-- **Mediapipe** (for hand tracking)
-- **Arduino** (for LED control)
+## Project Structure 📂
+```
+📁 Electronic-Voting-Machine
+│── EVM_final.ino        # Main Arduino code for EVM
+│── HelloWorld_LCD.ino   # LCD interfacing test
+│── button_light.ino     # Button interaction test
+│── buzzer_by_button.ino # Buzzer activation test
+│── EVM live demo.mp4    # Demonstration video
+│── README.md            # Project Documentation
+```
 
-## Installation & Setup
-### Prerequisites
-- Python 3.x installed
-- Arduino IDE installed
-- Required Python Libraries: OpenCV, Mediapipe, CVZone, pyserial
-- Arduino board with LEDs connected
+## Hardware Requirements 🛠️
+- **Arduino UNO**
+- **Push-Buttons**
+- **LED Display**
+- **Keypad (4x4 or 3x4)**
+- **Buzzer**
+- **Resistors & Jumper Wires**
 
-### Steps
+## Installation & Setup ⚙️
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/interactive-led-control.git
-   cd interactive-led-control
+   git clone https://github.com/yourusername/Electronic-Voting-Machine.git
    ```
-2. Install dependencies:
-   ```bash
-   pip install opencv-python mediapipe cvzone pyserial
-   ```
-3. Upload the Arduino code to your board using the Arduino IDE.
-4. Run the Python script to start gesture detection:
-   ```bash
-   python led_control.py
-   ```
+2. Open `EVM_final.ino` in **Arduino IDE**.
+3. Select the correct board: `Arduino UNO`.
+4. Connect the hardware components as per the circuit diagram.
+5. Upload the code and test the voting system.
 
-## How It Works
-1. **Camera Captures Hand Gestures:**
-   - The webcam detects the user’s hand.
-2. **Finger Count is Analyzed:**
-   - Mediapipe processes the image and counts extended fingers.
-3. **Command is Sent to Arduino:**
-   - Based on the count, a signal is sent via Serial communication.
-4. **LEDs Respond to Gestures:**
-   - The Arduino interprets the signal and controls the LEDs accordingly.
+## Live Demo 🎥
+![Demo Video](EVM%20live%20demo.mp4)
 
-## Gesture Mapping
-| Fingers Shown | LED Action        |
-|--------------|-----------------|
-| 0            | All LEDs OFF     |
-| 1            | LED 1 ON         |
-| 2            | LED 2 ON         |
-| 3            | LED 3 ON         |
-| 4            | LED 4 ON         |
-| 5            | All LEDs ON      |
+## Usage 🚦
+1. Power ON the Arduino UNO.
+2. Follow on-screen instructions on the LED display.
+3. Use the keypad to select candidates.
+4. Press the button to submit the vote.
+5. The buzzer confirms successful voting.
 
-## Future Improvements 
-- Add **color selection** for LEDs using gestures.
-- Improve gesture recognition accuracy.
-- Develop a GUI for easier interaction.
-
+## Contributions 🤝
+Feel free to fork this repository, submit issues, or contribute improvements! Let's build a more secure and interactive voting system together.
 
 ---
-
-For any issues or contributions, feel free to open an issue or submit a pull request on [GitHub](https://github.com/your-repo/interactive-led-control).
 
