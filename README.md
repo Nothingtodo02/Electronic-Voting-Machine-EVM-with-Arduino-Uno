@@ -57,17 +57,11 @@ This project enables **real-time interactive LED control** using **hand gestures
 | 4            | LED 4 ON         |
 | 5            | All LEDs ON      |
 
-## Future Improvements
+## Future Improvements 
 - Add **color selection** for LEDs using gestures.
 - Improve gesture recognition accuracy.
 - Develop a GUI for easier interaction.
 
-## Contributors
-- **Your Name**
-- **Your Team (if any)**
-
-## License
-This project is licensed under [Your Preferred License].
 
 ---
 
